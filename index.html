@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/favicon.icon"> <!-- favicon link-->
+<!-- poppin font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="main">
+        <!--Header-->
+        <header class="header-fix">
+            <!--btn-->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+
+            <!--header top-->
+            <div class="header-top">
+
+                <!--Icon-->
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+
+                <div class="nav-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em"  width="1em" ><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                    <a href="#">Store Location</a>
+                </div>
+                <!--logo-->
+                <a href="#" class="logo">
+                    <img src="logo1.png" alt="logo">
+                </a>
+                <div class="nav-btns">
+                    <!--search-->
+                    <a href="#" class="nav-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" ><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </a>
+                    <!--user-->
+                    <a href="#" class="nav-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em"  width="1em" ><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+                    </a>
+                    <!--cart-->
+                    <a href="cart.html" class="nav-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="1em"  width="1em"><path d="M423.3 440.7c0 25.3-20.3 45.6-45.6 45.6s-45.8-20.3-45.8-45.6 20.6-45.8 45.8-45.8c25.4 0 45.6 20.5 45.6 45.8zm-253.9-45.8c-25.3 0-45.6 20.6-45.6 45.8s20.3 45.6 45.6 45.6 45.8-20.3 45.8-45.6-20.5-45.8-45.8-45.8zm291.7-270C158.9 124.9 81.9 112.1 0 25.7c34.4 51.7 53.3 148.9 373.1 144.2 333.3-5 130 86.1 70.8 188.9 186.7-166.7 319.4-233.9 17.2-233.9z"/></svg>
+                        <span>0</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--Navigation bar-->
+            <nav class="navigation">
+                <!--menu-->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#category">Category</a></li>
+                    <li><a href="#shopping-banner">Shop</a></li>
+                    <li>
+                        <a href="#popular-dress">Popular</a>
+                        <span class="nav-lable">Hot Offers</span>
+                    </li>
+                    <li><a href="#recent-products">Recent</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--main content-->
+        <div class="main-content">
+            <!--text-->
+            <div class="main-content-text">
+                <strong>Collection</strong>
+                <h1>Stylish and fun</h1>
+                <p>Fenty isn't the best just go through our site you won't regret it</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="main-content-img">
+                <img src="images/ss.jpg" alt="model">
+            </div>
+        </div>
+    </section>
+
+    <!--====Search bar========================-->
+    <div class="search-bar">
+        <!---input-->
+        <form class="search-input">
+            <input type="text" placeholder="Search for product" name="search">
+            <a href="#" class="search-cancel">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  height="1em"  width="1em"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </a>
+        </form>
+
+    </div>
+
+<!--=======Login And Sign Up Form=============-->
+    <div class="form">
+    <!--login-->
+        <div class="login-form">
+
+
+            <a href="#" class="form-cancel">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  height="1em"  width="1em"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </a>
+
+            <!--heading-->
+            <strong>Log In</strong>
+
+            <!--input-->
+            <form action="">
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="submit" value="Log In">
+            </form> 
+
+            <!--forgot and sign up btns-->
+            <div class="form-btns">
+                <a href="#" class="forget">Forgot Your Password</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+
+        </div>
+        <!--signup form-->
+        <div class="sign-up-form">
+
+
+            <a href="#" class="form-cancel">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  height="1em"  width="1em"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </a>
+
+            <!--heading-->
+            <strong>Sign Up</strong>
+
+            <!--input-->
+            <form action="">
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="submit" value="Sign Up">
+            </form> 
+
+            <!--forgot and sign up btns-->
+            <div class="form-btns">
+                <a href="#" class="already-account">Already Have an Account?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--======Category============================-->
+<section id="category">
+<!--box-->
+<a href="#" class="category-box">
+    <!--img-->
+    <div class="category-box-img">
+        <img src="images/s112.jpg" alt="shoes">
+    </div>
+    <strong>Shoes</strong>
+</a>
+
+<!--box-->
+<a href="#" class="category-box">
+    <!--img-->
+    <div class="category-box-img">
+        <img src="images/f3.jpg" alt="T-shirts">
+    </div>
+    <strong>T-shirts</strong>
+</a>
+
+<!--box-->
+<a href="#" class="category-box">
+    <!--img-->
+    <div class="category-box-img">
+        <img src="images/s13.jpg" alt="hand bags">
+    </div>
+    <strong>Hand Bags</strong>
+</a>
+
+<!--box-->
+<a href="#" class="category-box">
+    <!--img-->
+    <div class="category-box-img">
+        <img src="images/s15.jpg" alt="dresses">
+    </div>
+    <strong>Dresses</strong>
+</a>
+
+<!--box-->
+<a href="#" class="category-box">
+    <!--img-->
+    <div class="category-box-img">
+        <img src="images/sjk.jpg" alt="Tops">
+    </div>
+    <strong>Tops</strong>
+</a>
+
+<!--box-->
+<a href="#" class="category-box">
+    <!--img-->
+    <div class="category-box-img">
+        <img src="images/s8.jpg" alt="kids kit">
+    </div>
+    <strong>Kids Kit</strong>
+</a>
+</section>
+
+<!--=====Popular Dresses======================-->
+<section id="popular-dress">
+
+    <h1>Popular Dresses</h1>
+
+    <!--**Container*********-->
+    <div class="popular-dress-container">
+
+        <!--******product************-->
+        <div class="popular-product-container">
+
+            <!-- box 1-->
+             <div class="product-box">
+                <!--img-->
+                <a href="#" class="product-box-img">
+                    <img src="images/f4.jpg" alt="product">
+                    <span>New</span>
+                </a>
+                <!--text-->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Yellow Dress</a>
+                    <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                        Add To Cart
+                    </a>
+                </div>
+             </div>
+
+             <!-- box 2-->
+             <div class="product-box">
+                <!--img-->
+                <a href="#" class="product-box-img">
+                    <img src="images/s4.jpg" alt="product">
+                    <span>New</span>
+                </a>
+                <!--text-->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Red dress</a>
+                    <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                        Add To Cart
+                    </a>
+                </div>
+             </div>
+
+             <!-- box 3-->
+             <div class="product-box">
+                <!--img-->
+                <a href="#" class="product-box-img">
+                    <img src="images/ffg.jpg" alt="product">
+                    <span>New</span>
+                </a>
+                <!--text-->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Mix Dress</a>
+                    <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                        Add To Cart
+                    </a>
+                </div>
+             </div>
+
+             <!-- box 4-->
+             <div class="product-box">
+                <!--img-->
+                <a href="#" class="product-box-img">
+                    <img src="images/fa.jpg" alt="product">
+                    <span>New</span>
+                </a>
+                <!--text-->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Black Dress</a>
+                    <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                        Add To Cart
+                    </a>
+                </div>
+             </div>
+
+             <!-- box 5-->
+             <div class="product-box">
+                <!--img-->
+                <a href="#" class="product-box-img">
+                    <img src="images/f2.jpg" alt="product">
+                    <span>New</span>
+                </a>
+                <!--text-->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Yellow Dress</a>
+                    <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                        Add To Cart
+                    </a>
+                </div>
+             </div>
+
+             <!-- box 6-->
+             <div class="product-box">
+                <!--img-->
+                <a href="#" class="product-box-img">
+                    <img src="images/fds.jpg" alt="product">
+                    <span>New</span>
+                </a>
+                <!--text-->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Yellow Dress</a>
+                    <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                        Add To Cart
+                    </a>
+                </div>
+             </div>
+        </div>
+        
+        <!--****banner***************-->
+        <div class="popular-banner">
+            <!--text-->
+            <div class="popular-banner-text">
+                <h3>Summer Dress Collection</h3>
+                <a href="#">Shop Now</a>
+            </div>
+            <!--img-->
+            <div class="popular-banner-img">
+                <img src="images/summmer1.jpg" alt="banner">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--=====Shopping-banner=======================-->
+<section id="shopping-banner">
+    <div class="shopping-banner-container">
+        <!--text-->
+        <div class="shopping-banner-text">
+            <strong>Collection</strong>
+            <h3>Stylish Bag and Shoes</h3>
+            <p>Top Quality Matching Shoes and Bags Set Beautiful Italian Shoes Women Handbag To Match Party Shoes</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <!--img-->
+        <div class="shopping-banner-img">
+            <img src="images/bs2.jpg" alt="banner">
+        </div>
+    </div>
+</section>
+
+<!--======Recent-Products=====================-->
+<section id="recent-products">
+    <!--Header-->
+    <h1>Recent Dress</h1>
+
+    <!--product container-->
+    <div class="recent-product-container">
+
+        <!-- box 1-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bs.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 2-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bs3.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 3-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s3.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 4-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s12.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 5-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s16.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 6-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/summer2.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 7-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s2.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 8-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s15.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 9-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/f1.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+    </div>
+</section>
+
+<!--==========Partner-logos===================-->
+<section id="partner">
+    <img src="images/adidas-originals.svg" alt="logo">
+    <img src="images/nike.png" alt="logo">
+    <img src="images/New-Balance-Emblem.png" alt="logo">
+    <img src="images/PUMA-logo.jpg" alt="logo">
+    <img src="images/umbro.png" alt="logo">
+</section>
+
+<!--======Shoes And Bags=====================-->
+<section id="recent-products">
+    <!--Header-->
+    <h1>Shoes and Bags</h1>
+
+    <!--product container-->
+    <div class="recent-product-container">
+
+        <!-- box 1-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag 1.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 2-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s1.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 3-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s6.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 4-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag2.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 5-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag3.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 6-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s7.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 7-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag4.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 8-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s8.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 9-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag5.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 10-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag7.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 11-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag6.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 12-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s9.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 13-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/s10.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+
+          <!-- box 14-->
+        <div class="product-box">
+            <!--img-->
+            <a href="#" class="product-box-img">
+                <img src="images/bag8.jpg" alt="product">
+                <span>New</span>
+            </a>
+            <!--text-->
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Yellow Dress</a>
+                <span>Ksh.2,000 <del>Ksh.2,500</del></span>
+                <a href="#" class="product-cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                    Add To Cart
+                </a>
+            </div>
+         </div>
+    </div>
+</section>
+
+<!--========Services========================-->
+<section class="services">
+    <!--servicesb-box-->
+    <div class="service-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"  height="1em"  width="1em"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+        <span>Free Shipping</span>
+        <p>Free shipping for all orders</p>
+    </div>
+
+    <!--servicesb-box-->
+    <div class="service-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em"  width="1em"><path d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"/></svg>
+        <span>Support 24/7</span>
+        <p>Me support 24h a day</p>
+    </div>
+
+    <!--servicesb-box-->
+    <div class="service-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em"  width="1em"><path d="M142.9 142.9c-17.5 17.5-30.1 38-37.8 59.8c-5.9 16.7-24.2 25.4-40.8 19.5s-25.4-24.2-19.5-40.8C55.6 150.7 73.2 122 97.6 97.6c87.2-87.2 228.3-87.5 315.8-1L455 55c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2l0 128c0 13.3-10.7 24-24 24l-8.4 0c0 0 0 0 0 0L344 224c-9.7 0-18.5-5.8-22.2-14.8s-1.7-19.3 5.2-26.2l41.1-41.1c-62.6-61.5-163.1-61.2-225.3 1zM16 312c0-13.3 10.7-24 24-24l7.6 0 .7 0L168 288c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-41.1 41.1c62.6 61.5 163.1 61.2 225.3-1c17.5-17.5 30.1-38 37.8-59.8c5.9-16.7 24.2-25.4 40.8-19.5s25.4 24.2 19.5 40.8c-10.8 30.6-28.4 59.3-52.9 83.8c-87.2 87.2-228.3 87.5-315.8 1L57 457c-6.9 6.9-17.2 8.9-26.2 5.2S16 449.7 16 440l0-119.6 0-.7 0-7.6z"/></svg>
+        <span>100% Money Back</span>
+        <p>30 days to return</p>
+    </div>
+</section>
+
+<!--========Footer========================-->
+<footer>
+    <div class="footer-container">
+
+        <!--Company Box-->
+        <div class="footer-company-box">
+            <!--logo-->
+            <a href="#" class="footer-logo">
+                <img src="logo1.png" alt="logo">
+            </a>
+            <!--Details-->
+            <p>Just Remember what you read about Fenty</p>
+            <!--socials-->
+            <div class="footer-socials">
+                <!--Instagram-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <!--Facebook-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"  width="1em"  viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+                <!--TikTok-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em" ><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                </a>
+                <!--Pinterest-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="1em"  width="1em" ><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                </a>
+                <!--Youtube-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="1em"  width="1em" ><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                </a>
+                <!--Twitter-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                        </svg>
+                </a>
+            </div>
+        </div>
+
+        <!--Link-Box-->
+        <div class="footer-link-box">
+            <strong>Main Link's</strong>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Recent</a></li>
+            </ul>
+        </div>
+
+        <!--Link-Box-->
+        <div class="footer-link-box">
+            <strong>Social Link's</strong>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Tiktok</a></li>
+                <li><a href="#">Pinterest</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Twitter X</a></li>
+            </ul>
+        </div>
+
+        <!--Subscribe-->
+        <div class="footer-subscribe">
+            <strong>Subscribe Now</strong>
+            <p>Subscribe for lattest news and new deals and early black-friday discounts</p>
+            <form class="subscribe-box">
+                <input type="email" placeholder="Email@gmail.com" required>
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!--bottom-->
+    <div class="footer-bottom">
+        <span class="footer-owner"> Made By Pique Lyon</span>
+        <span class="copyright">© Copyright 2024</span>
+    </div>
+</footer>
+
+
+
+
+
+    <!--=========TYPE SCRIPT=================-->
+    <script>
+
+        document.addEventListener('DOMContentLoaded',function(){
+            
+            //searching
+            document.addEventListener('click',function(event){
+                if(event.target.closest('.nav-search')){
+                    document.querySelector('.search-bar').classList.add('search-bar-active');
+                }
+                else if(event.target.closest('.search-cancel')){
+                    document.querySelector('.search-bar').classList.remove('search-bar-active');
+                }
+            })
+       
+            //sign up  and log in
+            document.addEventListener('click',function(event){
+        // check for user or already account click event
+            if(event.target.closest('.nav-user,.already-account')){
+                const formElement = document.querySelector('.form');
+                formElement.classList.add('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+//for sign up button
+            else if(event.target.closest('.sign-up-btn')){
+                const formElement = document.querySelector('.form');
+                formElement.classList.add('sign-up-active');
+                formElement.classList.remove('login-active');
+            }
+            // for cancel button
+            else if(event.target.closest('.form-cancel')){
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('sign-up-active');
+                formElement.classList.remove('login-active');
+            }
+         })
+        
+            //for fixed header
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
+            window.addEventListener('scroll', function(){
+                const currentScrollY = window.scrollY;
+
+                 //check if scroll at the top
+                if(currentScrollY === 0){
+                    header.classList.remove('header-fix');
+                }
+                else if(currentScrollY < lastScrollY){
+                    header.classList.add('header-fix');
+                }
+                else{
+                    header.classList.remove('header-fix'); 
+                }
+                lastScrollY = currentScrollY;
+            })
+            
+        });
+
+    </script>
+</body>
+</html>
